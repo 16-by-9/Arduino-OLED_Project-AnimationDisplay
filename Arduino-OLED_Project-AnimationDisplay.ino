@@ -21,9 +21,9 @@ const int orbitRadius = 26;    // how far the electron orbits from center
 const int electronRadius = 2;  // radius of the electron dot
 
 // Animation timing
-const int totalFrames = 30;
+const int totalFrames = 60;
 const float angleIncrement = 360.0 / totalFrames;  // degrees per frame
-const int frameDelay = 33;   // ~30 FPS (33ms per frame)
+const int frameDelay = 66;   
 
 void setup() {
   // Initialize I²C and OLED
@@ -64,6 +64,6 @@ void loop() {
     angleDeg -= 360.0;
   }
 
-  // 7) Delay to achieve ~30 FPS
+  // 7) Choose how much delay you want/like
   delay(frameDelay);
 }
